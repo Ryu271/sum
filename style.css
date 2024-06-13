@@ -1,0 +1,129 @@
+/* styles.css */
+body {
+    font-family: 'Courier New', Courier,;
+    margin: 0;
+    padding:100px;
+    background-image: url(bi.jpg);
+    background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
+}
+
+h1{
+    text-align: center;   
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.container {
+    width: 200%;
+    overflow: hidden; 
+    position: relative;
+}
+
+.background{
+    width:2000px;
+    height:60px;
+    background-image: url(computerr.jpg);
+    position:absolute;
+    animation: scrollBackground 10s linear infinite;
+}
+@keyframes scrollBackground {
+    0% { left: 0; } 
+    100% { left: -100%; } 
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.auto-resize {
+    display: inline-block; 
+    background-color: #79f2fbf4;
+}
+
+p{
+font-size: 17px;
+}
+
+.gazou {
+    transition: transform 0.3s ease; 
+    position: center;
+}
+
+.gazou:hover {
+    transform: scale(1.2); 
+}
+
+.toku{
+    transition: transform 0.3s ease; 
+    position: center;
+    width:auto;
+    height:250px;
+}
+
+.toku:hover{
+    transform: scale(1.2);
+}
+
+.change-color{
+    font-size:15px;
+    transition: font-size 0.3s ease;
+}
+
+.change-color:hover{
+    font-size: 17px;
+    color: red;
+}
+
+
+.change-colors{
+    font-size:15px;
+    transition: font-size 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.change-colors:hover{
+    font-size: 17px;
+    color: red;
+}
+
+.top-button { 
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    background-image: url(ushiro.jpg);
+    color: #fff; 
+    border: none;
+    border-radius:5px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+}
